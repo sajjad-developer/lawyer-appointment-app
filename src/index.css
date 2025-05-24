@@ -24,7 +24,8 @@
 .success-intro,
 .success-container,
 .container-btn,
-.footer {
+.footer,
+.blogs {
   font-family: var(--font-mulish);
 }
 

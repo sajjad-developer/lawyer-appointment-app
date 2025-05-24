@@ -1,11 +1,15 @@
-import Home from "@/Home/Home";
-import Layout from "@/Layout/Layout";
+import MainLayout from "@/Layouts/MainLayout";
+import Blogs from "@/pages/Blogs";
+import ErrorPage from "@/pages/ErrorPage";
+import Home from "@/pages/Home";
 import { createBrowserRouter } from "react-router";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: Layout,
+    Component: MainLayout,
+    errorElement: <ErrorPage />,
+
     children: [
       {
         path: "/",
@@ -13,6 +17,10 @@ const router = createBrowserRouter([
 
         loader: () => fetch("/Lawyer.json"),
         hydrateFallbackElement: <p>Ok</p>,
+      },
+      {
+        path: "/blogs",
+        Component: Blogs,
       },
     ],
   },

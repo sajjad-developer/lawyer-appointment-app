@@ -11,6 +11,7 @@ import ResponsiveImageProcessor from "@/ResponsiveImageProcessor/ResponsiveImage
 
 import React from "react";
 import { FaRegRegistered } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const LawyerCard = ({ lawyer }) => {
   console.log(lawyer);
@@ -45,7 +46,10 @@ const LawyerCard = ({ lawyer }) => {
         </CardHeader>
 
         <CardFooter className="px-0 mt-11">
-          <button className="btn border-[#176AE520] bg-gray-200 text-[#176AE5] rounded-xl border-none px-6">
+          <button
+            onClick={() => toast("Your appointment is booked successfully")}
+            className="btn border-[#176AE520] bg-gray-200 text-[#176AE5] rounded-xl border-none px-6"
+          >
             View Details
           </button>
         </CardFooter>
