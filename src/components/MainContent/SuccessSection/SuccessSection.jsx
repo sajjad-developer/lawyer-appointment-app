@@ -8,19 +8,19 @@ import CountUp from "react-countup";
 
 const SuccessSection = () => {
   return (
-    <section className=" mt-18 success-sections space-y-10 px-20 ">
+    <section className=" mt-18 success-sections space-y-10 px-3 md:px-10 lg:px-20 ">
       <div className="success-intro leading-relaxed flex flex-col justify-center items-center space-y-3">
-        <h1 className="text-[#0F0F0F] font-extrabold text-[40px]">
+        <h1 className="text-[#0F0F0F] font-extrabold text-2xl lg:text-[40px] whitespace-nowrap">
           We Provide Best Law Services
         </h1>
-        <p className="font-normal px-8 leading-relaxed text-xl text-[#0F0F0F]">
+        <p className="font-normal text-justify lg:px-6 leading-relaxed text-xl text-[#0F0F0F]">
           Our platform connects you with verified, experienced Lawyers across
           various special arena — all at your convenience.
         </p>
       </div>
-      <div className="success-container flex gap-6 ">
+      <div className="success-container grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {/* success card 1 */}
-        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200 w-76 aspect-[1/1]">
+        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200  aspect-[1/1]">
           <div className="star-rating">
             <img src={successLawyer} alt="success rating displayed" />
           </div>
@@ -34,7 +34,7 @@ const SuccessSection = () => {
           </div>
         </div>
         {/* success card 2 */}
-        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200 w-76 aspect-[1/1]">
+        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200  aspect-[1/1]">
           <div className="star-rating">
             <img src={starRating} alt="success rating displayed" />
           </div>
@@ -48,7 +48,7 @@ const SuccessSection = () => {
           </div>
         </div>
         {/* success card 3 */}
-        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200 w-76 aspect-[1/1]">
+        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200  aspect-[1/1]">
           <div className="star-rating">
             <img src={successCases} alt="success rating displayed" />
           </div>
@@ -62,7 +62,7 @@ const SuccessSection = () => {
           </div>
         </div>
         {/* success card 4 */}
-        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200 w-76 aspect-[1/1]">
+        <div className="stats space-y-4 flex flex-col justify-center items-center bg-gray-200  aspect-[1/1]">
           <div className="star-rating">
             <img src={successStaffs} alt="success rating displayed" />
           </div>
