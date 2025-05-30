@@ -13,12 +13,12 @@ const Navbar = () => {
     >
       <div className="space-x-2 text-4xl font-extrabold lg:space-x-6 navbar-start">
         <img src={navbarLogo} alt="" />
-        <Link to="/" className="text-3xl lg:text-4xl">
+        <Link to="/" className="text-3xl md:text-base lg:text-4xl">
           Law.BD
         </Link>
       </div>
-      <div className="hidden navbar-center lg:flex">
-        <ul className="menu menu-horizontal px-1 font-medium  text-[20px] space-x-10">
+      <div className="hidden navbar-center md:flex">
+        <ul className="menu  menu-horizontal px-1 font-medium md:text-base  lg:text-[20px] md:space-x-2 lg:space-x-10">
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "text-indigo-700" : "")}
@@ -58,7 +58,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <NavLink className=" hidden md:flex btn bg-[#0EA106]  p-4 lg:p-8 rounded-3xl font-bold  text-[20px]">
+        <NavLink className=" hidden md:flex btn bg-[#0EA106]  p-4 lg:p-8 rounded-3xl font-bold md:text-base  lg:text-[20px]">
           Contact Now
         </NavLink>
         <div className="relative">
