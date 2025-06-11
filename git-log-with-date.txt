@@ -1,3 +1,6 @@
+03a9835 2025-05-31 02:48:57 +0600 chore(lawyers-container section): remove extra button from this section
+a903c9b 2025-05-31 02:40:13 +0600 refactor(navbar): make menu visible for tablet screen
+a7c52d2 2025-05-31 02:08:21 +0600 feat: add lawyers container, new pages, success section and footer; make header, main, and footer responsive
 ba2da74 2025-05-24 17:52:05 +0600 feat: add blogs page - Linked it in navbar - Linked it in footer
 d26a4fa 2025-05-23 00:59:52 +0600 refactor: delete logo.png and add logo.svg in public folder
 494ae2d 2025-05-23 00:18:43 +0600 feat: add favicon

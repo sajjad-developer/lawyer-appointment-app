@@ -11,7 +11,7 @@ const MainLayout = () => {
   }
   return (
     <>
-      <ToastContainer></ToastContainer>
+      <ToastContainer className="text-xl font-bold font-inter"></ToastContainer>
       <Navbar></Navbar>
       <div className=" min-h-[calc(100vh - (4 rem + 420px))]">
         <Outlet></Outlet>

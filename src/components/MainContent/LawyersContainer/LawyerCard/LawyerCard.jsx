@@ -15,7 +15,6 @@ import { Link, useNavigate } from "react-router";
 import { toast } from "react-toastify";
 
 const LawyerCard = ({ lawyer }) => {
-  console.log(lawyer);
   const { images, name, experience, licenseNumber, speciality } = lawyer;
 
   const navigate = useNavigate();

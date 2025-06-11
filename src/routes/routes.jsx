@@ -1,3 +1,4 @@
+import SpinnerPinwheel from "@/components/SpinnerPinWheel";
 import MainLayout from "@/Layouts/MainLayout";
 import Blogs from "@/pages/Blogs";
 import ContactUS from "@/pages/ContactUS";
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
         Component: Home,
 
         loader: () => fetch("lawyers.json"),
-        hydrateFallbackElement: <p>Ok</p>,
+        hydrateFallbackElement: <SpinnerPinwheel></SpinnerPinwheel>,
       },
       {
         path: "/blogs",
