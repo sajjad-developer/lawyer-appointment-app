@@ -36,7 +36,7 @@ const MainContent = ({ lawyers, handleSearch }) => {
             onChange={(e) => setSearchText(e.target.value)}
             type="text"
             placeholder="Type your search query here"
-            className="font-mulish  text-base md:text-xl   font-semibold p-6 md:w-[30%]  rounded-xl border-green-300 border-3   focus:outline-none focus:shadow-outline input"
+            className="bg-white text-black font-mulish  text-base md:text-xl   font-semibold p-6 md:w-[30%]  rounded-xl border-green-300 border-3   focus:outline-none focus:shadow-outline input"
             title="Your search text"
           />
 
