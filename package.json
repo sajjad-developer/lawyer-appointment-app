@@ -25,8 +25,7 @@
     "react-router": "^7.6.0",
     "react-toastify": "^11.0.5",
     "recharts": "^2.15.3",
-    "tailwind-merge": "^3.3.0",
-    "vite-plugin-purgecss": "^0.2.13"
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",

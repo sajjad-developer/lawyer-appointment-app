@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import LawyerCard from "./LawyerCard/LawyerCard";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
+import LawyerCard from "./LawyerCard/LawyerCard";
 
 const LawyersContainer = ({ lawyers }) => {
   const [displayLawyers, setDisplayLawyers] = useState([]);
