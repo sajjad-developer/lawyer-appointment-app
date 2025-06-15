@@ -26,8 +26,10 @@ const router = createBrowserRouter([
         Component: Blogs,
       },
       {
-        path: "/my-bookings",
+        path: "/my-bookings/:Sajjad",
         Component: MyBookings,
+        loader: () => fetch("../lawyers.json"),
+        hydrateFallbackElement: <SpinnerPinwheel></SpinnerPinwheel>,
       },
       {
         path: "/contact-us",

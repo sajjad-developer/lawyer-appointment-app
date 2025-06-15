@@ -10,23 +10,23 @@ const Home = () => {
 
   const handleSearch = (e, text) => {
     e.preventDefault();
-
-    const searchedLawyers = lawyers.filter(
-      (lawyer) =>
-        lawyer?.name?.toLowerCase().split(" ").includes(text?.toLowerCase()) ||
-        lawyer?.speciality
-          ?.toLowerCase()
-          .split(" ")
-          .includes(text?.toLowerCase())
-    );
-    searchedLawyers.length > 0
-      ? toast.success("Your search is successful!")
-      : toast.info(
-          <span className="h-[200%]">
-            No lawyers found. Please, type at least one word.
-          </span>
-        );
-    setLawyers(searchedLawyers);
+    if (text.trim() === "") setLawyers(data);
+    else {
+      const searchedText = text.trim().toLowerCase();
+      const searchedLawyers = data.filter(
+        (lawyer) =>
+          lawyer?.name?.toLowerCase().split(" ").includes(searchedText) ||
+          lawyer?.speciality?.toLowerCase().split(" ").includes(searchedText)
+      );
+      searchedLawyers.length > 0
+        ? toast.success("Your search is successful!")
+        : toast.info(
+            <span className="h-[200%]">
+              No lawyers found. Please, type at least one word.
+            </span>
+          );
+      setLawyers(searchedLawyers);
+    }
   };
 
   return (

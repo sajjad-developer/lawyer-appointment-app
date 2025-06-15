@@ -1,21 +1,19 @@
 import {
   Card,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardAction,
-  CardDescription,
   CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import ResponsiveImageProcessor from "@/ResponsiveImageProcessor/ResponsiveImageProcessor";
 
-import React from "react";
 import { FaRegRegistered } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router";
 import { toast } from "react-toastify";
 
 const LawyerCard = ({ lawyer }) => {
-  const { images, name, experience, licenseNumber, speciality } = lawyer;
+  const { id, images, name, experience, licenseNumber, speciality } = lawyer;
 
   const navigate = useNavigate();
 
@@ -54,12 +52,14 @@ const LawyerCard = ({ lawyer }) => {
         </CardHeader>
 
         <CardFooter className="px-0 mt-11">
-          <button
-            onClick={handleToast}
-            className="btn border-[#176AE520] bg-gray-200 text-[#176AE5] rounded-xl border-none px-6"
-          >
-            View Details
-          </button>
+          <Link to={`/my-bookings/${id}`}>
+            <button
+              onClick={handleToast}
+              className="btn border-[#176AE520] bg-gray-200 text-[#176AE5] rounded-xl border-none px-6"
+            >
+              View Details
+            </button>
+          </Link>
         </CardFooter>
       </div>
     </Card>

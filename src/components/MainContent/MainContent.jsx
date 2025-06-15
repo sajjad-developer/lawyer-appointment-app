@@ -22,7 +22,11 @@ const MainContent = ({ lawyers, handleSearch }) => {
         </p>
 
         <form
-          onSubmit={(e) => handleSearch(e, searchText, setSearchText)}
+          onSubmit={(e) => {
+            handleSearch(e, searchText);
+            // reset input state
+            setSearchText("");
+          }}
           className="flex gap-4 justify-center items-center mx-auto mt-10 w-[96%] md:w-full md:gap-6"
         >
           <label htmlFor="search" className="sr-only">
@@ -31,7 +35,6 @@ const MainContent = ({ lawyers, handleSearch }) => {
           <input
             id="search"
             name="search_text"
-            required
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
             type="text"
